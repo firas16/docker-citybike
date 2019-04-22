@@ -31,6 +31,8 @@ RUN wget https://github.com/firas16/cityBike1/releases/download/v1.1/cityBike-as
 
 RUN wget https://github.com/firas16/cityBike1/releases/download/v1.1/Brisbane_CityBike.json
 
-RUN sh ./spark/bin/spark-submit --class cityBike.ClusterMain cityBike-assembly-1.3.jar inputPath=./Brisbane_CityBike.json outputPath=result/
+RUN sh ./spark/bin/spark-submit --class cityBike.ClusterMain cityBike-assembly-1.3.jar inputPath=./Brisbane_CityBike.json outputPath=resultCityBike/
+
+RUN cp -r /resultCityBike /result
 
 CMD ["/bin/bash"]

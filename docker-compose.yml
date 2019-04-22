@@ -1,12 +1,14 @@
 version: "3"
 services:
-  web:
-    # replace username/repo:tag with your name and image details
-    image: spark1:latest
+  spark:
+    build: ./docker
+    image: spark-city-bike1:latest
     ports:
       - "4000:80"
     networks:
       - webnet
+    volumes: 
+      - ./:/result
 networks:
   webnet:
 
