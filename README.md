@@ -1,6 +1,6 @@
 # docker-citybike
 
-## Prequisities
+## Prequisites
 Docker version 18 or higher
 
 ## Steps to run the project
@@ -13,4 +13,4 @@ Go to docker directory and run: \
   ```exit```
 
 
-
+You will get the results inside resultCityBike folder.
