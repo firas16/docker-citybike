@@ -9,7 +9,7 @@ Clone the project: \
 Go to docker directory and run: \
   ```docker build --tag=spark-city-bike . ```\
   ```docker run -i --mount type=bind,src=$(pwd),dst=/result spark-city-bike```\
-  ```cp -r /resultCityBike /result```\             
+  ```cp -r /resultCityBike /result```             
   ```exit```
 
 
